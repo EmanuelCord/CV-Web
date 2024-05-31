@@ -1,0 +1,23 @@
+:root {
+    --background-display: #111;
+    --background: #1E1E1E;
+    --white: #f2f2f2;
+    --gray: #768394;
+    --gray-dark: #353c46;
+    --font-light:300;
+    --font-regular:400;
+    --font-bold:700;
+    --font-extra-bold:800;
+    --font-black:900;
+}
+
+* {
+    /*Normalize*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    /*Font*/
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+}
