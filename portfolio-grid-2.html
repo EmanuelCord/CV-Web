@@ -10,7 +10,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>Aivo - Multipurpose Portfolio HTML Website Template</title>
+		<title>Portfolio / Aivo - Multipurpose Portfolio HTML Website Template</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -78,7 +78,7 @@
 		* Use class "menu-align-right" to align menu to right.
 		* Use class "menu-align-center" to align menu to center (do not use with header classes!).
 		-->
-		<header id="header" class="header-show-hide-on-scroll menu-align-right">
+		<header id="header" class="header-show-hide-on-scroll header-transparent header-transparent-dark menu-align-right">
 
 			<!-- Begin header inner -->
 			<div class="header-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
@@ -244,11 +244,11 @@
 
 							<!-- Begin submenu (submenu master)
 							==================================== -->
-							<li class="tt-submenu-wrap tt-submenu-master active">
+							<li class="tt-submenu-wrap tt-submenu-master">
 								<a href="#0">Home</a>
 								<div class="tt-submenu">
 									<ul class="tt-submenu-list">
-										<li class="active"><a href="home-landing-1.html">Home Landing 1</a></li>
+										<li><a href="home-landing-1.html">Home Landing 1</a></li>
 										<li><a href="home-landing-2.html">Home Landing 2</a></li>
 										<li><a href="home-landing-3.html">Home Landing 3</a></li>
 										<li><a href="home-full-screen-slideshow.html">Full Screen Slideshow</a></li>
@@ -316,19 +316,19 @@
 
 							<!-- Begin submenu (submenu master)
 							==================================== -->
-							<li class="tt-submenu-wrap tt-submenu-master">
+							<li class="tt-submenu-wrap tt-submenu-master active">
 								<a href="#0">Portfolio</a>
 								<div class="tt-submenu">
 									<ul class="tt-submenu-list">
 										
 										<!-- Begin submenu
 										=================== -->
-										<li class="tt-submenu-wrap">
+										<li class="tt-submenu-wrap active">
 											<a href="#0">Portfolio Grid</a>
 											<div class="tt-submenu">
 												<ul class="tt-submenu-list">
 													<li><a href="portfolio-grid-1.html">Portfolio Grid 1</a></li>
-													<li><a href="portfolio-grid-2.html">Portfolio Grid 2</a></li>
+													<li class="active"><a href="portfolio-grid-2.html">Portfolio Grid 2</a></li>
 													<li><a href="portfolio-grid-3.html">Portfolio Grid 3</a></li>
 													<li><a href="portfolio-grid-4.html">Portfolio Grid 4</a></li>
 													<li><a href="portfolio-grid-5.html">Portfolio Grid 5</a></li>
@@ -722,487 +722,172 @@
 		<div id="body-content">
 
 
-			<!-- ==========================
-			///// Begin intro section /////
-			===============================
-			* Use classes "intro-xs", "intro-sm", "intro-lg" "intro-xlg" or "intro-full" to set intro size.
-			* Use class "intro-full-m" to set intro size for small screens only.
+			<!-- ========================
+			///// Begin page header /////
+			=============================
+			* Use classes "ph-xs", "ph-sm", "ph-lg" or "ph-xlg" to set page header size.
+			* Use class "ph-center" or "ph-right" to align page header caption.
 			-->
-			<section id="tt-intro" class="intro-full-m">
-				<div class="tt-intro-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
+			<section id="page-header" class="ph-lg">
 
-					<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
-					====================================================================
-					* Use class "nav-outside" for outside nav (requires boxed layout).
-					* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
-					* Use class "nav-bottom-right" for bottom right nav.
-					* Use class "nav-rounded" for rounded nav.
-					* Use class "nav-light" to enable nav light style.
-					* Use class "dots-outside" for outside dots (requires enough space at the bottom of the carousel).
-					* Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
-					* Use class "dots-rounded" for rounded dots.
-					* Use class "owl-mousewheel" to enable mousewheel support.
-					* Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
-					* Use class "cc-hover-zoom" to enable carousel items hover effect.
-					================================================================
-					* Available carousel data attributes:
-							data-items="5".......................(items visible on desktop)
-							data-tablet-landscape="4"............(items visible on mobiles)
-							data-tablet-portrait="3".............(items visible on mobiles)
-							data-mobile-landscape="2"............(items visible on tablets)
-							data-mobile-portrait="1".............(items visible on tablets)
-							data-loop="true".....................(true/false)
-							data-margin="10".....................(space between items)
-							data-center="true"...................(true/false)
-							data-start-position="0"..............(item start position)
-							data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
-							data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
-							data-mouse-drag="false"..............(true/false)
-							data-touch-drag="false"..............(true/false)
-							data-autoheight="true"...............(true/false)
-							data-autoplay="true".................(true/false)
-							data-autoplay-timeout="5000".........(milliseconds)
-							data-autoplay-hover-pause="true".....(true/false)
-							data-autoplay-speed="800"............(milliseconds)
-							data-drag-end-speed="800"............(milliseconds)
-							data-nav="true"......................(true/false)
-							data-nav-speed="800".................(milliseconds)
-							data-dots="false"....................(true/false)
-							data-dots-speed="800"................(milliseconds)
-					-->
-					<div class="owl-carousel cursor-grab bg-dark cc-hover-zoom" data-items="1" data-loop="true" data-dots="false" data-nav="true" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-hover-pause="true" data-animate-in="fadeIn" data-animate-out="fadeOut">
-
-						<!-- Begin carousel item 
-						========================= -->
-						<div class="cc-item">
-
-							<!-- Begin intro image 
-							=======================
-							* Use class "parallax-1" up to "parallax-8" to enable image parallax effect (number 1-8 represents the speed).
-							-->
-							<div class="intro-image-wrap parallax-6">
-								<div class="intro-image bg-dark bg-image" style="background-image: url(assets/img/intro/intro-9.jpg);">
-									
-									<!-- Element cover 
-									===================
-									* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-									* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-									* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
-									-->
-									<div class="cover cover-opacity-5"></div>
-
-								</div> <!-- /.intro-image -->
-							</div>
-							<!-- End intro image wrap -->
-
-							<!-- Begin intro caption 
-							=========================
-							* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-							* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
-							* Use class "parallax-1" up to "parallax-6" to enable parallax effect (no effect on mobile devices!).
-							* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (no effect on mobile devices!).
-							-->
-							<div class="intro-caption-wrap caption-animate intro-caption-xxlg center parallax-4 fade-out-scroll-5">
-								<div class="intro-caption-holder">
-									<div class="intro-caption center">
-										<h1 class="intro-title">aivo</h1>
-										<h2 class="intro-subtitle">Build your beautiful portfolio website today!</h2>
-
-										<!-- Begin intro description (recommended max 170 characters!) 
-										============================= -->
-										<div class="intro-description">
-											Aivo – is a complete HTML5 and CSS3 website template. It fits perfectly for freelancers, artists and design agencies. It looks great with all types of devices.
-										</div>
-										<!-- End intro-description -->
-
-										<!-- Begin intro buttons -->
-										<div class="intro-buttons">
-											<a href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-											<a href="" class="btn btn-white-bordered margin-top-5">Discover More</a>
-										</div>
-										<!-- End intro buttons -->
-
-									</div> <!-- /.intro-caption -->
-								</div> <!-- /.intro-caption-holder -->
-							</div>
-							<!-- End intro caption wrap -->
-
-						</div>
-						<!-- End carousel item -->
-
-						<!-- Begin carousel item 
-						========================= -->
-						<div class="cc-item">
-
-							<!-- Begin intro image 
-							=======================
-							* Use class "parallax-1" up to "parallax-8" to enable image parallax effect (number 1-8 represents the speed).
-							-->
-							<div class="intro-image-wrap parallax-6">
-								<div class="intro-image bg-dark bg-image" style="background-image: url(assets/img/intro/intro-2.jpg);">
-									
-									<!-- Element cover 
-									===================
-									* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-									* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-									* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
-									-->
-									<div class="cover cover-opacity-2"></div>
-
-								</div> <!-- /.intro-image -->
-							</div>
-							<!-- End intro image wrap -->
-
-							<!-- Begin intro caption 
-							=========================
-							* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-							* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
-							* Use class "parallax-1" up to "parallax-6" to enable parallax effect (no effect on mobile devices!).
-							* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (no effect on mobile devices!).
-							-->
-							<div class="intro-caption-wrap caption-animate intro-caption-sm center parallax-4 fade-out-scroll-5">
-								<div class="intro-caption-holder">
-									<div class="intro-caption center">
-										<h1 class="intro-title">Start Growing Your Business</h1>
-										<h2 class="intro-subtitle">Build your beautiful portfolio website today!</h2>
-
-										<!-- Begin intro description (recommended max 170 characters!) 
-										============================= -->
-										<div class="intro-description">
-											Aivo – is a complete HTML5 and CSS3 website template. It fits perfectly for freelancers, artists and design agencies. It looks great with all types of devices.
-										</div>
-										<!-- End intro-description -->
-
-										<!-- Begin intro buttons -->
-										<div class="intro-buttons">
-											<a href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-											<a href="" class="btn btn-white-bordered margin-top-5">Discover More</a>
-										</div>
-										<!-- End intro buttons -->
-
-									</div> <!-- /.intro-caption -->
-								</div> <!-- /.intro-caption-holder -->
-							</div>
-							<!-- End intro caption wrap -->
-
-						</div>
-						<!-- End carousel item -->
-
-						<!-- Begin carousel item 
-						========================= -->
-						<div class="cc-item">
-
-							<!-- Begin intro image 
-							=======================
-							* Use class "parallax-1" up to "parallax-8" to enable image parallax effect (number 1-8 represents the speed).
-							-->
-							<div class="intro-image-wrap parallax-6">
-								<div class="intro-image bg-dark bg-image" style="background-image: url(assets/img/intro/intro-3.jpg);">
-									
-									<!-- Element cover 
-									===================
-									* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-									* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-									* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
-									-->
-									<div class="cover cover-opacity-2"></div>
-
-								</div> <!-- /.intro-image -->
-							</div>
-							<!-- End intro image wrap -->
-
-							<!-- Begin intro caption 
-							=========================
-							* Position classes: "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center", "bottom-right". 
-							* Size classes: "intro-caption-xs", "intro-caption-sm", "intro-caption-lg", "intro-caption-xlg", "intro-caption-xxlg".
-							* Use class "parallax-1" up to "parallax-6" to enable parallax effect (no effect on mobile devices!).
-							* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (no effect on mobile devices!).
-							-->
-							<div class="intro-caption-wrap caption-animate intro-caption-sm center parallax-4 fade-out-scroll-5">
-								<div class="intro-caption-holder">
-									<div class="intro-caption intro-caption-lg center">
-										<h1 class="intro-title">Show Yourself to the World</h1>
-										<h2 class="intro-subtitle">Build your beautiful portfolio website today!</h2>
-
-										<!-- Begin intro description (recommended max 170 characters!) 
-										============================= -->
-										<div class="intro-description">
-											Aivo – is a complete HTML5 and CSS3 website template. It fits perfectly for freelancers, artists and design agencies. It looks great with all types of devices.
-										</div>
-										<!-- End intro-description -->
-
-										<!-- Begin intro buttons -->
-										<div class="intro-buttons">
-											<a href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" class="btn btn-primary margin-top-5 margin-right-10" target="_blank">Buy It Now!</a> 
-											<a href="" class="btn btn-white-bordered margin-top-5">Discover More</a>
-										</div>
-										<!-- End intro buttons -->
-
-									</div> <!-- /.intro-caption -->
-								</div> <!-- /.intro-caption-holder -->
-							</div>
-							<!-- End intro caption wrap -->
-
-						</div>
-						<!-- End carousel item -->
-
-					</div>
-					<!-- End content carousel -->
-
-				</div> <!-- /.tt-intro-inner -->
-			</section>
-			<!-- End intro section -->
-
-
-			<!-- =======================================
-			///// Begin services section (style-1) /////
-			============================================ 
-			* Add class "ss-light" if you use a dark background.
-			-->
-			<section id="services-section" class="services-style-1">
-				<div class="services-inner tt-wrap">
-
-					<!-- Begin info box wrap 
-					========================= 
-					* Use class "ib-style-2" to change info box style.
-					* Use class "ib-boxed" enable info box boxed style.
-					* Use class "ib-icon-color" to enable icon colored style (no effect with class: "ib-icon-bg-color").
-					* Use class "ib-icon-bg-shape" to enable icon background shape (no effect with class: "ib-icon-bg-color").
-					* Use class "ib-icon-bg-color" to enable icon background color style.
-					* Use class "ib-icon-rounded" to enable icon rounded style (class "ib-icon-bg-color" is required!).
-					* Use class "ib-light" if the background is dark.
-					-->
-					<div class="info-box-wrap ib-style-2 ib-icon-bg-shape">
-						
-						<div class="row">
-							<div class="col-sm-4">
-
-								<!-- Begin info box -->
-								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-screen"></span></span>
-									<div class="info-box-info">
-										<h3 class="info-box-heading"><a href="">Web Design</a></h3>
-										<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
-											Aenean ac consectetur quam. Donec malesuada lacus nec ullamcorper pellentesque praesent ulis. Proin pulvinar scelerisque lorem apti.
-										</div>
-									</div> <!-- /.info-box-info -->
-								</div>
-								<!-- End info box -->
-
-							</div> <!-- /.col -->
-
-							<div class="col-sm-4">
-
-								<!-- Begin info box -->
-								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-cog"></span></span>
-									<div class="info-box-info">
-										<h3 class="info-box-heading"><a href="">Web Development</a></h3>
-										<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
-											Integer at condimentum orci, ut euismod ante. Class aptent taciti sociosqu ad litora torquent. Proin pulvinar scelerisque lorem apti.
-										</div>
-									</div> <!-- /.info-box-info -->
-								</div>
-								<!-- End info box -->
-
-							</div> <!-- /.col -->
-
-							<div class="col-sm-4">
-
-								<!-- Begin info box -->
-								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-camera-video"></span></span>
-									<div class="info-box-info">
-										<h3 class="info-box-heading"><a href="">Motion Graphics</a></h3>
-										<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit necessit officia tempor. Proin pulvinar scelerisque lorem apti.
-										</div>
-									</div> <!-- /.info-box-info -->
-								</div>
-								<!-- End info box -->
-
-							</div> <!-- /.col -->
-						</div> <!-- /.row -->
-
-						<div class="row">
-							<div class="col-sm-4">
-
-								<!-- Begin info box -->
-								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-leaf"></span></span>
-									<div class="info-box-info">
-										<h3 class="info-box-heading"><a href="">Illustrations</a></h3>
-										<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
-											Aenean ac consectetur quam. Donec malesuada lacus nec ullamcorper pellentesque praesent ulis. Proin pulvinar scelerisque lorem apti.
-										</div>
-									</div> <!-- /.info-box-info -->
-								</div>
-								<!-- End info box -->
-
-							</div> <!-- /.col -->
-
-							<div class="col-sm-4">
-
-								<!-- Begin info box -->
-								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-users"></span></span>
-									<div class="info-box-info">
-										<h3 class="info-box-heading"><a href="">Marketing</a></h3>
-										<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
-											Integer at condimentum orci, ut euismod ante. Class aptent taciti sociosqu ad litora torquent. Proin pulvinar scelerisque lorem apti.
-										</div>
-									</div> <!-- /.info-box-info -->
-								</div>
-								<!-- End info box -->
-
-							</div> <!-- /.col -->
-
-							<div class="col-sm-4">
-
-								<!-- Begin info box -->
-								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-pie-chart"></span></span>
-									<div class="info-box-info">
-										<h3 class="info-box-heading"><a href="">Analytics</a></h3>
-										<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit necessit officia tempore. Proin pulvinar scelerisque lorem apti.
-										</div>
-									</div> <!-- /.info-box-info -->
-								</div>
-								<!-- End info box -->
-
-							</div> <!-- /.col -->
-						</div> <!-- /.row -->
-
-					</div>
-					<!-- End info box wrap -->
-
-				</div> <!-- /.services-inner -->
-			</section>
-			<!-- End services section -->
-
-
-			<!-- =================================
-			///// Begin video promo section /////
-			====================================== -->
-			<section class="video-promo-section bg-image" style="background-image: url(assets/img/misc/misc-5.jpg);">
-
-				<!-- Element cover 
-				===================
-				* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-				* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-				* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
+				<!-- Begin page header image 
+				============================= 
+				* Use class "parallax-1" up to "parallax-8" to enable image parallax effect (number 1-8 represents the speed).
+				* Use class "hide-ph-image" to hide page header image without removing the code.
 				-->
-				<div class="cover cover-opacity-5"></div>
-
-				<div class="video-promo-inner tt-wrap">
+				<div class="page-header-image hide-ph-image parallax-6 bg-image" style="background-image: url(assets/img/page-header/page-header-bg-1.jpg);">
 					
-					<!-- Begin video promo caption 
-					=============================== -->
-					<div class="video-promo-caption">
-
-						<!-- Begin tt-heading 
-						====================== 
-						* Use class "text-center" or "text-right" to align tt-heading.
-						* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-						-->
-						<div class="tt-heading tt-heading-xlg text-center text-white">
-							<div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
-								
-									
-								<h1 class="tt-heading-title">Video Promo</h1>
-								<div class="tt-heading-subtitle">Watch our video presentation</div>
-								
-								<!-- Begin zig-zag separator 
-								============================= 
-								* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
-								* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
-								-->
-								<!-- <div class="zig-zag-separator">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</div> -->
-								<!-- End zig-zag separator -->
-
-							</div> <!-- /.tt-heading-inner -->
-						</div>
-						<!-- End tt-heading -->
+					<!-- Element cover 
+					===================
+					* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
+					* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
+					* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
+					-->
+					<div class="cover cover-opacity-4"></div>
 					
-						<!-- Begin video promo button
-						==============================
-						* Use class "vpb-animated" to enable button animation.
-						* Note: Just add your Youtube or Vimeo video link. 
-						-->
-						<div class="video-promo-btn-wrap vpb-animated lightgallery">
-							<a href="https://vimeo.com/9176726" class="video-promo-btn lg-trigger">
-								<span class="lnr lnr-camera-video"></span>
-							</a>
-						</div>
-						<!-- End video promo button -->
+				</div>
+				<!-- End page header image -->
 
+				<!-- Begin page header inner -->
+				<div class="page-header-inner tt-wrap">
+
+					<!-- Begin page header caption 
+					===============================
+					* Use classes "ph-cap-xs", "ph-cap-sm", "ph-cap-lg" or "ph-cap-xlg" to set caption size.
+					* Use classes "ph-cap-light" to enable caption light color style (useful if you use dark background images).
+					* Use classes "ph-cap-shadow" to enable caption text shadow.
+					* Use class "parallax-1" up to "parallax-6" to enable parallax effect (no effect on mobile devices!).
+					* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scrolls (no effect on mobile devices!).
+					-->
+					<div class="page-header-caption parallax-5">
+						<div class="ph-title-wrap">
+							<h1 class="page-header-title">Hi, we are Aivo. We are a creative team from Melbourne. We create beautiful web solutions.</h1>
+						</div>
+						<!-- <div class="ph-subtitle-wrap">
+							<h2 class="page-header-subtitle">This Is My Awesome Work</h2>
+						</div> -->
+
+						<!-- Begin zig-zag separator 
+						============================= 
+						* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
+						* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
+						-->
+						<div class="zig-zag-separator zig-zag-lg">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<!-- End zig-zag separator -->
+
+						<!-- Begin page header description (recommended max 170 characters!) 
+						=================================== -->
+						<!-- <div class="page-header-description">
+							<div class="ph-desc-inner">
+								Fusce imperdiet, arcu non tempor aliquam, justo tortor cursus est, sed facilisis eros purus et felis. Sed eros sapien, iaculis eget gravida euismod, dapibus vitae turpis.
+							</div>
+						</div> -->
+						<!-- End page header description -->
+						
 					</div>
-					<!-- End video promo caption -->
+					<!-- End page header caption -->
 
-				</div> <!-- /.video-promo-inner -->
+				</div> 
+				<!-- End page header inner -->
+
+				<!-- Begin page header animated element
+				========================================
+				* Use class "ph-anim-circle" to enable element circle style.
+				* Use class "ph-anim-center" or "ph-anim-right" to align animated element.
+				* Use class "parallax-1" up to "parallax-6" to enable parallax effect.
+				* Use class "fade-out-scroll-1" up to "fade-out-scroll-6" to enable fade out effect if page scroll.
+				* Use class "hide-ph-anim" to disable animated element without removing the code.
+				-->
+				<div class="ph-anim-element-wrap parallax-4">
+					<div class="ph-anim-element-holder">
+						<div class="ph-anim-element"></div>
+					</div>
+				</div>
+				<!-- End page header animated element -->
+
 			</section>
-			<!-- End video promo section -->
+			<!-- End page header -->
 
 
 			<!-- ===================================
 			///// Begin portfolio list section /////
 			==================================== -->
 			<section id="portfolio-list-section">
-
-				<!-- Begin tt-heading 
-				====================== 
-				* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-				* Use class "text-center" or "text-right" to align tt-heading.
-				* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-				-->
-				<div class="tt-heading tt-heading-lg padding-on">
-					<div class="tt-heading-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
-						
-						<div class="row">
-							<div class="col-md-4">
-								
-								<h1 class="tt-heading-title">Latest Projects</h1>
-								<div class="tt-heading-subtitle">Please see our recent work</div>
-								
-								<!-- Begin zig-zag separator 
-								============================= 
-								* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
-								* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
-								-->
-								<div class="zig-zag-separator">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-								<!-- End zig-zag separator -->
-
-							</div> <!-- /.col -->
-
-							<div class="col-md-8">
-								<p>Nunc euismod ipsum vel metus rhoncus, a accumsan sapien mollis. Donec malesuada lacus rhoncus ipsum dignissim, sed fringilla orci faucibus. Proin non odio dui. Donec ut tristique dolor, at interdum sem. Quisque finibus viverra lectus vitae pulvinar.</p>
-							</div> <!-- /.col -->
-						</div> <!-- /.row -->
-
-					</div> <!-- /.tt-heading-inner -->
-				</div>
-				<!-- End tt-heading -->
-
-
-				<div class="portfolio-list-inner isotope-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
+				<div class="portfolio-list-inner isotope-wrap tt-wrap max-width-1500"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
 					
 					<!-- Begin isotope
 					===================
 					* Use class "gutter-1", "gutter-2", "gutter-3", "gutter-4", "gutter-5" or "gutter-6" to add more space between items.
 					* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
 					-->
-					<div class="isotope col-4">
+					<div class="isotope col-2 gutter-3">
+						
+						<!-- Begin isotope top content -->
+						<div class="isotope-top-content">
+
+							<!-- Begin isotope categories (if you don't want to use a isotope filter then you can use the category list instead to present portfolio categories on separate pages. Just uncomment if needed. Note: do not forget to remove isotope filter code!).
+							================================= 
+							* Add class "active" to <li> if you need active link on current page.
+							* Use class "iso-cat-center" or "iso-cat-right" to align category list.
+							-->
+							<!-- <div class="isotope-categories-wrap">
+								<ul class="isotope-categories">
+									<li class="icl-title"><span>Categories: </span></li>
+									<li class="active"><a href="">Branding</a></li>
+									<li><a href="">Print</a></li>
+									<li><a href="">Digital</a></li>
+									<li><a href="">Motion</a></li>
+								</ul>
+							</div> -->
+							<!-- End isotope categories -->
+
+
+							<!-- Begin isotope filter
+							==========================
+							* Use class "fi-btn" to enable filter button (default style).
+							* Use class "fi-center" or "fi-right" to align filter ("fi-center"= no effect on "fi-btn").
+							* Use class "fi-btn-dark" to enable filter button dark style (class "fi-btn" is required!).
+							* Use class "fi-btn-light" to enable filter button light style (class "fi-btn" is required!).
+							* Use class "fi-btn-tansparent-dark" to enable filter button transparent dark style (class "fi-btn" is required! No effect on smaller screens!).
+							* Use class "fi-btn-tansparent-light" to enable filter button transparent light style (class "fi-btn" is required! No effect on smaller screens!).
+							* Use class "fi-btn-dropdown-dark" to enable filter button dropdown dark style (class "fi-btn" is required!).
+							* Use class "fi-btn-dropdown-light" to enable filter button dropdown light style (class "fi-btn" is required!).
+							-->
+							<div class="isotope-filter fi-btn fi-right fi-btn-tansparent-dark">
+								<div class="isotope-filter-button">
+									<span class="ifb-icon"><span class="lnr lnr-funnel"></span></span>
+									<span class="ifb-icon-close"><i class="fas fa-times"></i></span> <!-- effect on small screens!) -->
+
+									<!-- Begin filter button text
+									==============================
+									* Use class "hide-from-xs" to disable button text on small screens.
+									* Use class "hide" to disable button text permanently.
+									-->
+									<span class="ifb-text">Filter</span>
+									<!-- End filter button text -->
+
+								</div> <!-- /.isotope-filter-button -->
+
+								<!-- Begin isotope filter links -->
+								<ul class="isotope-filter-links">
+									<li class="ifl-title"><span>Filter: </span></li>
+									<li><button class="active" data-filter="*">Show All</button></li>
+									<li><button data-filter=".branding">Branding</button></li>
+									<li><button data-filter=".print">Print</button></li>
+									<li><button data-filter=".digital">Digital</button></li>
+									<li><button data-filter=".motion">Motion</button></li>
+								</ul>
+								<!-- End isotope filter links -->
+							</div>
+							<!-- End isotope filter -->
+
+						</div>
+						<!-- End isotope top content -->
 
 						<!-- Begin isotope items wrap 
 						==============================
@@ -1211,7 +896,7 @@
 						* Use class "pli-colored" or "pli-multi-colored" to enable colored hover overlay (effect only with default hover overlay and "pli-alter-4", "pli-alter-5" classes!).
 						* Use class "pli-frame" to enable image frames.
 						-->
-						<div class="isotope-items-wrap pli-colored pli-alter-4">
+						<div class="isotope-items-wrap pli-dark pli-alter-4">
 
 							<!-- Grid sizer (do not remove!!!) -->
 							<div class="grid-sizer"></div>
@@ -1472,7 +1157,7 @@
 
 										<!-- Begin portfolio list item image inner -->
 										<a href="portfolio-single-7.html" class="pl-item-image-inner">
-											<div class="pl-item-image bg-image lazy" data-src="assets/img/portfolio/list/list-1/portfolio-list-16.gif"></div>
+											<div class="pl-item-image bg-image lazy" data-src="assets/img/portfolio/list/list-1/portfolio-list-7.jpg"></div>
 											
 											<!-- Portfolio list item icon (displayed only with default hover overlay and "pli-alter-4" class in isotope-items-wrap) -->
 											<div class="pl-item-icon"><span class="lnr lnr-link"></span></div>
@@ -1512,7 +1197,7 @@
 
 										<!-- Begin portfolio list item image inner -->
 										<a href="portfolio-single-8.html" class="pl-item-image-inner">
-											<div class="pl-item-image bg-image lazy" data-src="assets/img/portfolio/list/list-1/portfolio-list-8.jpg"></div>
+											<div class="pl-item-image bg-image lazy" data-src="assets/img/portfolio/list/list-1/portfolio-list-16.gif"></div>
 											
 											<!-- Portfolio list item icon (displayed only with default hover overlay and "pli-alter-4" class in isotope-items-wrap) -->
 											<div class="pl-item-icon"><span class="lnr lnr-link"></span></div>
@@ -1697,6 +1382,86 @@
 							</div>
 							<!-- End isotope item -->
 
+							<!-- ===================== 
+							/// Begin isotope item ///
+							========================== 
+							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+							-->
+							<div class="isotope-item digital branding iso-height-1">
+
+								<!-- Begin portfolio list item -->
+								<div class="portfolio-list-item">
+
+									<!-- Begin portfolio list item image -->
+									<div class="pl-item-image-wrap">
+
+										<!-- Begin portfolio list item image inner -->
+										<a href="portfolio-single-4.html" class="pl-item-image-inner">
+											<div class="pl-item-image bg-image lazy" data-src="assets/img/portfolio/list/list-1/portfolio-list-13.jpg"></div>
+											
+											<!-- Portfolio list item icon (displayed only with default hover overlay and "pli-alter-4" class in isotope-items-wrap) -->
+											<div class="pl-item-icon"><span class="lnr lnr-link"></span></div>
+										</a>
+										<!-- End portfolio list item image inner -->
+
+									</div>
+									<!-- End portfolio list item image -->
+									
+									<!-- Begin portfolio list item info -->
+									<div class="pl-item-info">
+										<div class="pl-item-caption">
+											<h2 class="pl-item-title"><a href="portfolio-single-4.html">Um Putra Amena</a></h2>
+											<div class="pl-item-category"><a href="portfolio-archive.html">Digital</a>, <a href="">Branding</a></div>
+										</div>
+									</div>
+									<!-- End portfolio list item info -->
+
+								</div>
+								<!-- End portfolio list item -->
+
+							</div>
+							<!-- End isotope item -->
+
+							<!-- ===================== 
+							/// Begin isotope item ///
+							========================== 
+							* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
+							-->
+							<div class="isotope-item motion iso-height-1">
+
+								<!-- Begin portfolio list item -->
+								<div class="portfolio-list-item">
+
+									<!-- Begin portfolio list item image -->
+									<div class="pl-item-image-wrap">
+
+										<!-- Begin portfolio list item image inner -->
+										<a href="portfolio-single-5.html" class="pl-item-image-inner">
+											<div class="pl-item-image bg-image lazy" data-src="assets/img/portfolio/list/list-1/portfolio-list-14.jpg"></div>
+											
+											<!-- Portfolio list item icon (displayed only with default hover overlay and "pli-alter-4" class in isotope-items-wrap) -->
+											<div class="pl-item-icon"><span class="lnr lnr-link"></span></div>
+										</a>
+										<!-- End portfolio list item image inner -->
+
+									</div>
+									<!-- End portfolio list item image -->
+									
+									<!-- Begin portfolio list item info -->
+									<div class="pl-item-info">
+										<div class="pl-item-caption">
+											<h2 class="pl-item-title"><a href="portfolio-single-5.html">Aktus Nami At Fakenburger</a></h2>
+											<div class="pl-item-category"><a href="portfolio-archive.html">Motion</a></div>
+										</div>
+									</div>
+									<!-- End portfolio list item info -->
+
+								</div>
+								<!-- End portfolio list item -->
+
+							</div>
+							<!-- End isotope item -->
+
 						</div>
 						<!-- End isotope items wrap -->
 
@@ -1705,7 +1470,7 @@
 						========================= 
 						* Use class "tt-pagin-center" or "tt-pagin-right" to align pagination 
 						* Use class "tt-pagin-rounded" to enable pagination rounded style -->
-						<!-- <div class="tt-pagination-wrap">
+						<div class="tt-pagination-wrap">
 							<ul class="tt-pagination">
 								<li><a href="" title="Go to the first page">First</a></li>
 								<li><a href="" title="Go to the previous page">Prev</a></li>
@@ -1724,7 +1489,7 @@
 								<span>Showing page 1 of 8</span>
 								<span>Portfolios 1-15 of 114</span>
 							</div>
-						</div> -->
+						</div>
 						<!-- End tt-pagination -->
 
 						<!-- Begin isotope pagination (Note: "Load More" button is for design purposes only!)
@@ -1744,836 +1509,13 @@
 			<!-- End portfolio list section -->
 
 
-			<!-- ===========================
-			///// Begin prices section /////
-			============================ -->
-			<section id="prices-section">
-				<div class="prices-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
-
-					<!-- Begin tt-heading 
-					====================== 
-					* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-					* Use class "text-center" or "text-right" to align tt-heading.
-					* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-					-->
-					<div class="tt-heading tt-heading-lg text-center padding-on">
-						<div class="tt-heading-inner">
-							<h1 class="tt-heading-title">Pricing Plans</h1>
-							<div class="tt-heading-subtitle">Please choose your pricing plan</div>
-							
-							<!-- Begin zig-zag separator 
-							============================= 
-							* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
-							* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
-							-->
-							<div class="zig-zag-separator">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-							<!-- End zig-zag separator -->
-
-							<div class="tt-heading-text">
-								<p>Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt viverra.</p>
-							</div>
-
-						</div> <!-- /.tt-heading-inner -->
-					</div>
-					<!-- End tt-heading -->
-
-
-					<!-- Begin price boxes container 
-					================================= -->
-					<div class="price-boxes-container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-
-								<!-- Begin price box
-								=====================
-								* Use class "pr-box-featured" to make price box featured.
-								-->
-								<div class="price-box">
-									<div class="pr-box price-heading">
-										<div class="price-heading-inner">
-											<div class="prh-icon"><span class="lnr lnr-layers"></span></div>
-											<h3 class="price-title">Basic</h3>
-											<div class="price-heading-text">Basic Plan</div>
-										</div>
-									</div>
-									<div class="pr-box price-box-price">
-										<div class="price"><span class="price-currency">$</span>59</div>
-										<div class="price-tenure">Per 1 Month</div>
-									</div>
-									<div class="pr-box price-features">
-										<ul class="list-unstyled">
-											<li>Artemize Naice In</li>
-											<li>3 Putras Torrim</li>
-											<li>5 Voites Trante</li>
-											<li class="prb-mark">Fitrim Namzeck</li>
-											<li class="prb-mark">Fartimo Antera</li>
-										</ul>
-									</div>
-									<div class="pr-box">
-										<a href="contact.html" class="btn btn-price-box btn-primary">Order Now!</a>
-										<a href="page-dummy-classic-sidebar-right.html" class="pr-box-read-more">- or Read More</a>
-									</div>
-									<span class="pr-box-ribbon">Popular</span> <!-- Visible only if price box is featured! -->
-								</div>
-								<!-- End price box -->
-								
-							</div> <!-- /.col -->
-
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-								
-								<!-- Begin price box
-								=====================
-								* Use class "pr-box-featured" to make price box featured.
-								-->
-								<div class="price-box pr-box-featured">
-									<div class="pr-box price-heading">
-										<div class="price-heading-inner">
-											<div class="prh-icon"><span class="lnr lnr-sun"></span></div>
-											<h3 class="price-title">Standard</h3>
-											<div class="price-heading-text">Standard Plan</div>
-										</div>
-									</div>
-									<div class="pr-box price-box-price">
-										<div class="price"><span class="price-currency">$</span>89</div>
-										<div class="price-tenure">Per 6 Month</div>
-									</div>
-									<div class="pr-box price-features">
-										<ul class="list-unstyled">
-											<li>Artemize Naice In</li>
-											<li>7 Putras Torrim</li>
-											<li>10 Voites Trante</li>
-											<li>Fitrim Namzeck</li>
-											<li class="prb-mark">Fartimo Anteras</li>
-										</ul>
-									</div>
-									<div class="pr-box">
-										<a href="contact.html" class="btn btn-price-box btn-primary">Order Now!</a>
-										<a href="page-dummy-classic-sidebar-right.html" class="pr-box-read-more">- or Read More</a>
-									</div>
-									<span class="pr-box-ribbon">Popular</span> <!-- Visible only if price box is featured! -->
-								</div>
-								<!-- End price box -->
-
-							</div> <!-- /.col -->
-
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-								
-								<!-- Begin price box
-								=====================
-								* Use class "pr-box-featured" to make price box featured.
-								-->
-								<div class="price-box">
-									<div class="pr-box price-heading">
-										<div class="price-heading-inner">
-											<div class="prh-icon"><span class="lnr lnr-rocket"></span></div>
-											<h3 class="price-title">Premium</h3>
-											<div class="price-heading-text">Premium Plan</div>
-										</div>
-									</div>
-									<div class="pr-box price-box-price">
-										<div class="price"><span class="price-currency">$</span>129</div>
-										<div class="price-tenure">Per 1 Year</div>
-									</div>
-									<div class="pr-box price-features">
-										<ul class="list-unstyled">
-											<li>Artemize Naice In</li>
-											<li>15 Putras Torrim</li>
-											<li>20 Voites Trante</li>
-											<li>Fitrim Namzeck</li>
-											<li>Fartimo Antera</li>
-										</ul>
-									</div>
-									<div class="pr-box">
-										<a href="contact.html" class="btn btn-price-box btn-primary">Order Now!</a>
-										<a href="page-dummy-classic-sidebar-right.html" class="pr-box-read-more">- or Read More</a>
-									</div>
-									<span class="pr-box-ribbon">Popular</span> <!-- Visible only if price box is featured! -->
-								</div>
-								<!-- End price box -->
-
-							</div> <!-- /.col -->
-						</div> <!-- /.row -->
-
-					</div>
-					<!-- End price boxes container -->
-
-				</div> <!-- /.prices-section-inner -->
-			</section>
-			<!-- End prices section -->
-
-
-			<!-- =================================
-			///// Begin testimonials section /////
-			================================== -->
-			<section id="testimonials-section" class="bg-dark bg-image" style="background-image: url(assets/img/misc/testimonials-bg-3.jpg);">
-
-				<!-- Element cover 
-				===================
-				* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-				* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-				* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
-				-->
-				<span class="cover cover-opacity-7"></span>
-
-				<div class="testimonials-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
-
-					<!-- Begin testimonials carousel
-					=================================
-					* Use class "tm-hide-image" to hide testimonial image.
-					* Use class "tm-center" or "tm-right" to align testimonials.
-					-->
-					<div class="testimonials-carousel tm-center tm-hide-image">
-
-						<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
-						====================================================================
-						* Use class "nav-outside" for outside nav (requires boxed layout).
-						* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
-						* Use class "nav-bottom-right" for bottom right nav.
-						* Use class "nav-rounded" for rounded nav.
-						* Use class "nav-light" to enable nav light style.
-						* Use class "dots-outside" for outside dots (requires enough space at the bottom of the carousel).
-						* Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
-						* Use class "dots-rounded" for rounded dots.
-						* Use class "owl-mousewheel" to enable mousewheel support.
-						* Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
-						================================================================
-						* Available carousel data attributes:
-								data-items="5".......................(items visible on desktop)
-								data-tablet-landscape="4"............(items visible on mobiles)
-								data-tablet-portrait="3".............(items visible on mobiles)
-								data-mobile-landscape="2"............(items visible on tablets)
-								data-mobile-portrait="1".............(items visible on tablets)
-								data-loop="true".....................(true/false)
-								data-margin="10".....................(space between items)
-								data-center="true"...................(true/false)
-								data-start-position="0"..............(item start position)
-								data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
-								data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
-								data-mouse-drag="false"..............(true/false)
-								data-touch-drag="false"..............(true/false)
-								data-autoheight="true"...............(true/false)
-								data-autoplay="true".................(true/false)
-								data-autoplay-timeout="5000".........(milliseconds)
-								data-autoplay-hover-pause="true".....(true/false)
-								data-autoplay-speed="800"............(milliseconds)
-								data-drag-end-speed="800"............(milliseconds)
-								data-nav="true"......................(true/false)
-								data-nav-speed="800".................(milliseconds)
-								data-dots="false"....................(true/false)
-								data-dots-speed="800"................(milliseconds)
-						-->
-						<div class="owl-carousel cursor-grab dots-outside dots-rounded" data-lazy-load="true" data-items="1" data-loop="true" data-autoheight="true" data-dots-speed="800" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-speed="800" data-autoplay-hover-pause="true">
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin testimonial item -->
-								<div class="testimonial-item text-white">
-									<div class="tm-image-wrap">
-										<div class="tm-image bg-image owl-lazy" data-src="assets/img/blog/small/avatar/avatar-2.jpg"></div>
-									</div>
-									<blockquote>
-										<p>"Duis vel ligula non neque varius eleifend quis id elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse lacus dui, pellentesque ut porta et, consequat sit amet."</p>
-										<small>Anna Clarkson</small>
-									</blockquote>
-								</div>
-								<!-- End testimonial item -->
-
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin testimonial item -->
-								<div class="testimonial-item text-white">
-									<div class="tm-image-wrap">
-										<div class="tm-image bg-image owl-lazy" data-src="assets/img/blog/small/avatar/avatar-3.jpg"></div>
-									</div>
-									<blockquote>
-										<p>"Maecenas sit amet diam iaculis, lobortis tortor sed, bibendum quam. Nam mauris odio, sodales interdum facilisis in, dignissim et massa. In suscipit quam nisi."</p>
-										<small>John Smith</small>
-									</blockquote>
-								</div>
-								<!-- End testimonial item -->
-
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin testimonial item -->
-								<div class="testimonial-item text-white">
-									<div class="tm-image-wrap">
-										<div class="tm-image bg-image owl-lazy" data-src="assets/img/blog/small/avatar/avatar-4.jpg"></div>
-									</div>
-									<blockquote>
-										<p>"Proin at tincidunt leo. Morbi ut metus sit amet purus molestie sollicitudin. Maecenas convallis est vitae neque feugiat, in accumsan odio vestibulum. Pellentesque sodales fermentum porttitor."</p>
-										<small>Jack Paterson</small>
-									</blockquote>
-								</div>
-								<!-- End testimonial item -->
-
-							</div>
-							<!-- End carousel item -->
-
-						</div>
-						<!-- End content carousel -->
-
-					</div> 
-					<!-- End testimonials carousel -->
-
-				</div> <!-- /.tt-intro-inner -->
-			</section>
-			<!-- End testimonials section -->
-
-
-			<!-- ================================
-			///// Begin latest news section /////
-			================================= -->
-			<section id="latest-news-section">
-				<div class="latest-news-section-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
-
-					<!-- Begin tt-heading 
-					====================== 
-					* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-					* Use class "text-center" or "text-right" to align tt-heading.
-					* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-					-->
-					<div class="tt-heading tt-heading-xlg text-center margin-bottom-80">
-						<div class="tt-heading-inner">
-							<h1 class="tt-heading-title">Latest News</h1>
-							<div class="tt-heading-subtitle">Recent articles from blog</div>
-							
-							<!-- Begin zig-zag separator 
-							============================= 
-							* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
-							* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
-							-->
-							<div class="zig-zag-separator">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-							<!-- End zig-zag separator -->
-
-							<div class="tt-heading-text">
-								<p>Duis mattis quam quis quam cursus, a rutrum ante luctus. Phasellus porta ornare enim ac euismod. Nulla fringilla lectus ac tincidunt viverra.</p>
-							</div>
-
-						</div> <!-- /.tt-heading-inner -->
-					</div>
-					<!-- End tt-heading -->
-
-
-					<!-- Begin latest news carousel
-					================================ -->
-					<div class="latest-news-carousel">
-
-						<!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
-						====================================================================
-						* Use class "nav-outside" for outside nav (requires boxed layout).
-						* Use class "nav-outside-top" for outside top nav (requires enough space at the top of the carousel).
-						* Use class "nav-bottom-right" for bottom right nav.
-						* Use class "nav-rounded" for rounded nav.
-						* Use class "nav-light" to enable nav light style.
-						* Use class "dots-outside" for outside dots (requires enough space at the bottom of the carousel).
-						* Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
-						* Use class "dots-rounded" for rounded dots.
-						* Use class "owl-mousewheel" to enable mousewheel support.
-						* Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
-						================================================================
-						* Available carousel data attributes:
-								data-items="5".......................(items visible on desktop)
-								data-tablet-landscape="4"............(items visible on mobiles)
-								data-tablet-portrait="3".............(items visible on mobiles)
-								data-mobile-landscape="2"............(items visible on tablets)
-								data-mobile-portrait="1".............(items visible on tablets)
-								data-loop="true".....................(true/false)
-								data-margin="10".....................(space between items)
-								data-center="true"...................(true/false)
-								data-start-position="0"..............(item start position)
-								data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
-								data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
-								data-mouse-drag="false"..............(true/false)
-								data-touch-drag="false"..............(true/false)
-								data-autoheight="true"...............(true/false)
-								data-autoplay="true".................(true/false)
-								data-autoplay-timeout="5000".........(milliseconds)
-								data-autoplay-hover-pause="true".....(true/false)
-								data-autoplay-speed="800"............(milliseconds)
-								data-drag-end-speed="800"............(milliseconds)
-								data-nav="true"......................(true/false)
-								data-nav-speed="800".................(milliseconds)
-								data-dots="false"....................(true/false)
-								data-dots-speed="800"................(milliseconds)
-						-->
-						<div class="owl-carousel cursor-grab nav-outside-top nav-rounded" data-lazy-load="true" data-items="3" data-margin="30" data-loop="true" data-dots="false" data-nav="true" data-nav-speed="500" data-autoplay="false" data-autoplay-timeout="5000" data-autoplay-speed="500" data-autoplay-hover-pause="true" data-tablet-landscape="3" data-tablet-portrait="2" data-mobile-landscape="1" data-mobile-portrait="1">
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Begin blog list item image -->
-									<div class="bl-item-image-wrap">
-										<a href="blog-single.html" class="bl-item-image bg-image owl-lazy" data-src="assets/img/blog/list/blog-2.jpg"></a>
-									</div>
-									<!-- End blog list item image -->
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category">
-											<a href="blog-archive.html">Resources</a>
-										</div>
-										<a href="blog-single.html" class="bl-item-title"><h2>25 Free and Premium Admin HTML Website Templates and Layouts</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">Nov 22, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Lucas Sanski">Lucas Sanski</a></span>
-										</div>
-										<div class="bl-item-desc">
-											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl proin...
-										</div>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read comments"><i class="far fa-comment"></i> 66</a>
-												<!-- End comments count -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Begin blog list item image -->
-									<div class="bl-item-image-wrap">
-										<a href="blog-single.html" class="bl-item-image bg-image owl-lazy" data-src="assets/img/blog/list/blog-3.jpg"></a>
-									</div>
-									<!-- End blog list item image -->
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category">
-											<a href="blog-archive.html">Coding</a>
-										</div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Why Designers and Web Developers Must Work Together</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">Nov 14, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Kate Dixon">Kate Dixon</a></span>
-										</div>
-										<div class="bl-item-desc">
-											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl proin...
-										</div>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read comments"><i class="far fa-comment"></i> 3</a>
-												<!-- End comments count -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Begin blog list item image -->
-									<div class="bl-item-image-wrap">
-										<a href="blog-single.html" class="bl-item-image bg-image owl-lazy" data-src="assets/img/blog/list/blog-4.jpg"></a>
-									</div>
-									<!-- End blog list item image -->
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category">
-											<a href="blog-archive.html">Resources</a>
-										</div>
-										<a href="blog-single.html" class="bl-item-title"><h2>Time-Saving Tools and Resources for Freelance Designers</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">Nov 11, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Lucas Sanski">Lucas Sanski</a></span>
-										</div>
-										<div class="bl-item-desc">
-											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl proin...
-										</div>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read comments"><i class="far fa-comment"></i> 0</a>
-												<!-- End comments count -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Begin blog list item image -->
-									<div class="bl-item-image-wrap">
-										<a href="blog-single.html" class="bl-item-image bg-image owl-lazy" data-src="assets/img/blog/list/blog-5.jpg"></a>
-									</div>
-									<!-- End blog list item image -->
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category">
-											<a href="blog-archive.html">Tutorials</a>
-										</div>
-										<a href="blog-single.html" class="bl-item-title"><h2>How to Create a Flat Cityscape in Adobe Illustrator</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">Nov 04, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Lucas Sanski">Lucas Sanski</a></span>
-										</div>
-										<div class="bl-item-desc">
-											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl proin...
-										</div>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read comments"><i class="far fa-comment"></i> 8</a>
-												<!-- End comments count -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End carousel item -->
-
-							<!-- Begin carousel item 
-							========================= -->
-							<div class="cc-item">
-
-								<!-- Begin blog list item -->
-								<article class="blog-list-item">
-									
-									<!-- Begin blog list item image -->
-									<div class="bl-item-image-wrap">
-										<a href="blog-single.html" class="bl-item-image bg-image owl-lazy" data-src="assets/img/blog/list/blog-7.jpg"></a>
-									</div>
-									<!-- End blog list item image -->
-									
-									<!-- Begin blog list item info -->
-									<div class="bl-item-info">
-										<div class="bl-item-category">
-											<a href="blog-archive.html">Resources</a>
-										</div>
-										<a href="blog-single.html" class="bl-item-title"><h2>21 tips for Creating a Great Personal Online Portfolio</h2></a>
-										<div class="bl-item-meta"> 
-											<span class="published">Nov 04, 2017</span>
-											<span class="posted-by">- by <a href="#" title="View all posts by Kate Dixon">Kate Dixon</a></span>
-										</div>
-										<div class="bl-item-desc">
-											Etiam sollicitudin dolor lorem, non aliquet quam dignissim vel. Nunc at eros non odio vestibulum porttitor egestas ut nisl proin...
-										</div>
-
-										<!-- Begin blog list item attributes -->
-										<ul class="bl-item-attr">
-											<li>
-												<!-- Begin comments count -->
-												<a href="blog-single.html#blog-post-comments" class="bl-item-comments-count" title="Read comments"><i class="far fa-comment"></i> 8</a>
-												<!-- End comments count -->
-											</li>
-										</ul>
-										<!-- End blog list item attributes -->
-
-									</div>
-									<!-- End blog list item info -->
-
-								</article>
-								<!-- End blog list item -->
-
-							</div>
-							<!-- End carousel item -->
-
-						</div>
-						<!-- End content carousel -->
-
-					</div> 
-					<!-- End latest news carousel -->
-
-				</div> <!-- /.latest-news-section-inner -->
-			</section>
-			<!-- End latest news section -->
-
-
-			<!-- =============================================
-			///// Begin call to action section (style-2) /////
-			============================================== -->
-			<section class="call-to-action-section cta-style-2 bg-dark text-white bg-image" style="background-image: url(assets/img/pattern/pt-2.jpg);">
-
-				<!-- Element cover 
-				===================
-				* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-				* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-				* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
-				-->
-				<div class="cover cover-gradient-dark cover-opacity-9"></div>
-
-				<div class="cta-inner tt-wrap"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes in file "helper.css" -->
-					<div class="row">
-						<div class="col-md-6">
-
-							<!-- Begin tt-heading 
-							====================== 
-							* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-							* Use class "text-center" or "text-right" to align tt-heading.
-							* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-							-->
-							<div class="tt-heading tt-heading-xxlg">
-								<div class="tt-heading-inner">
-									<h1 class="tt-heading-title">Do You Feel Excited?</h1>
-									<div class="tt-heading-subtitle">Interested in working with us?</div>
-									
-									<!-- Begin zig-zag separator 
-									============================= 
-									* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
-									* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
-									-->
-									<div class="zig-zag-separator zig-zag-light">
-										<span></span>
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-									<!-- End zig-zag separator -->
-
-								</div> <!-- /.tt-heading-inner -->
-							</div>
-							<!-- End tt-heading -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-6">
-
-							<p>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat sem turpis.</p>
-							
-							<div class="margin-top-30">
-								<a href="contact.html" class="btn btn-primary btn-lg margin-top-5">Let's Work Together!</a>
-							</div>
-
-						</div> <!-- /.col -->
-					</div> <!-- /.row -->
-				</div> <!-- /.cta-inner -->
-			</section>
-			<!-- End call to action section -->
-
-
-			<!-- ======================================
-			///// Begin clients section (style-1) /////
-			======================================= -->
-			<section id="clients-section" class="clients-style-1">
-				<div class="clients-inner tt-wrap">
-					<div class="row">
-
-						<div class="col-lg-push-7 col-lg-5">
-
-							<!-- Begin tt-heading 
-							====================== 
-							* Use class "padding-on" to enable heading paddings (useful if you use tt-heading as stand alone element).
-							* Use class "text-center" or "text-right" to align tt-heading.
-							* Use classes "tt-heading-xs", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set tt-heading size.
-							-->
-							<div class="tt-heading tt-heading-xlg">
-								<div class="tt-heading-inner">
-									<h1 class="tt-heading-title">Clients</h1>
-									<div class="tt-heading-subtitle">Our Loyal Clients</div>
-									
-									<!-- Begin zig-zag separator 
-									============================= 
-									* Use classes "zig-zag-xs", "zig-zag-sm", "zig-zag-lg" or "zig-zag-xlg" to set separator size. 
-									* Use classes "zig-zag-light" or "zig-zag-dark" to change zig-zag separator style.
-									-->
-									<div class="zig-zag-separator">
-										<span></span>
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-									<!-- End zig-zag separator -->
-
-									<div class="tt-heading-text">
-										Repellendus nihil exercitationem illo molestias voluptatum fugit omnis tare. Voluptate modi, deserunt ipsam. <a href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" target="_blank">View All Clients</a>
-									</div>
-
-								</div> <!-- /.tt-heading-inner -->
-							</div>
-							<!-- End tt-heading -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-lg-pull-5 col-lg-7">
-
-							<!-- Begin client list (Note: for better results, use images with same dimensions!)
-							======================= 
-							* Use class "client-list-boxed" to enable client list boxed style.
-							-->
-							<ul class="client-list">
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-1.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-2.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-3.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-4.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-5.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-6.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-7.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-8.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-9.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-10.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-11.png" alt="Client"></a></li>
-								<li><a target="_blank" href="https://themeforest.net/item/aivo-multipurpose-portfolio-html-website-template/21587861?ref=Themetorium" title="Client Logo"><img src="assets/img/clients/client-12.png" alt="Client"></a></li>
-							</ul>
-							<!-- End client list -->
-
-						</div> <!-- /.col -->
-					</div> <!-- /.row -->
-
-				</div> <!-- /.clients-inner -->
-			</section>
-			<!-- End clients section -->
-
-
-			<!-- ==============================
-			///// Begin fun facts section /////
-			===================================
-			* Add class "ff-light" if you using dark background.
-			-->
-			<section id="funn-facts-section" class="bg-main ff-light bg-pattern" style="background-image: url(assets/img/pattern/transparent/pt-transparent-6.png);">
-				<div class="funn-facts-inner tt-wrap">
-
-					<!-- Element cover 
-					===================
-					* Use class "cover-opacity-*" to set cover opasity (1, 1.5, 2, 2.5, ... 9.5). Example: "cover-opacity-2" or "cover-opacity-2-5".
-					* Aditional color classes you can use: "cover-color", "cover-light", "cover-red", "cover-pink", "cover-purple", "cover-green", "cover-blue", "cover-yellow" or "cover-brown" to set cover background color (note: class "cover-color" = template main color).
-					* Use class "cover-gradient-dark", "cover-gradient-light" or "cover-gradient-color" to enable cover gradient background.
-					-->
-					<div class="cover cover-opacity-4 cover-color"></div>
-
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-
-							<!-- Begin counter up -->
-							<div class="counter-up-wrap cu-animated">
-								<div class="counter-up-icon"><i class="fas fa-users"></i></div>
-								<div class="counter-up">6211</div>
-								<h4 class="counter-up-title">Satisfied Customers</h4>
-							</div>
-							<!-- End counter up -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-3 col-sm-6">
-
-							<!-- Begin counter up -->
-							<div class="counter-up-wrap cu-animated">
-								<div class="counter-up-icon"><i class="fas fa-leaf"></i></div>
-								<div class="counter-up">126</div>
-								<h4 class="counter-up-title">Completed Projects</h4>
-							</div>
-							<!-- End counter up -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-3 col-sm-6">
-
-							<!-- Begin counter up -->
-							<div class="counter-up-wrap cu-animated">
-								<div class="counter-up-icon"><i class="fas fa-trophy"></i></div>
-								<div class="counter-up">18</div>
-								<h4 class="counter-up-title">Winning Awards</h4>
-							</div>
-							<!-- End counter up -->
-
-						</div> <!-- /.col -->
-
-						<div class="col-md-3 col-sm-6">
-
-							<!-- Begin counter up -->
-							<div class="counter-up-wrap cu-animated">
-								<div class="counter-up-icon"><i class="fas fa-life-ring"></i></div>
-								<div class="counter-up">459</div>
-								<h4 class="counter-up-title">Support Provided</h4>
-							</div>
-							<!-- End counter up -->
-
-						</div> <!-- /.col -->
-					</div> <!-- /.row -->
-
-				</div> <!-- /.funn-facts-inner -->
-			</section>
-			<!-- End fun facts section -->
-
-
          <!-- ===========================
 			///// Begin footer section /////
 			================================
 			* Use class "footer-dark" to enable dark footer.
 			* Use class "no-margin-top" if needed. 
 			-->
-			<section id="footer" class="footer-dark no-margin-top">
+			<section id="footer" class="footer-dark">
 				<div class="footer-inner">
 					<div class="footer-container tt-wrap">
 						<div class="row">
